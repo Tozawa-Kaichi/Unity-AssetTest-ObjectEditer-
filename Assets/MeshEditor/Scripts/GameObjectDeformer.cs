@@ -36,6 +36,9 @@ public class GameObjectDeformer : MonoBehaviour {
             MeshFilter.sharedMesh.SetVertices(vert);
             MeshFilter.sharedMesh.RecalculateBounds();
 
+            //sMesh.sharedMesh.SetVertices(vert);
+            //sMesh.sharedMesh.RecalculateBounds();
+
             Collider col = GetComponent<Collider>();
             if (col is MeshCollider)
                 ((MeshCollider)col).sharedMesh = MeshFilter.sharedMesh;

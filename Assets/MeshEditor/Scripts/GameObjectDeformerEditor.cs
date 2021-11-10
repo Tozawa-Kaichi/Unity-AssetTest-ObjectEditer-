@@ -69,6 +69,9 @@ public class GameObjectDeformerEditor : Editor
         if (deformMesh != null && !string.IsNullOrEmpty(deformMesh.MeshName))
         {
             Mesh mesh = deformMesh.MeshFilter.sharedMesh;
+
+            //SkinnedMeshRenderer mesh = deformMesh.MeshFilter.sharedMesh;
+
             newMesh = new Mesh();
             newMesh.vertices = mesh.vertices;
             newMesh.triangles = mesh.triangles;
