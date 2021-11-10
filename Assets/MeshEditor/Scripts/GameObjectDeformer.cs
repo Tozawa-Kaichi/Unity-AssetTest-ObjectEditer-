@@ -7,6 +7,7 @@ public class GameObjectDeformer : MonoBehaviour {
     // Objects mesh filter ... we get the vertices from here
     [HideInInspector]
     public MeshFilter MeshFilter;
+    public SkinnedMeshRenderer sMesh;
 
     [HideInInspector]
     public bool Initialized = false;
